@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soltek Ingeniería</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
       background-color: #f9f9f9;
       color: #333;
-
-      /* Marca de agua */
       background-image: url('paneles.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
       background-size: contain;
-      opacity: 0.98;
     }
 
     header {
@@ -47,16 +45,40 @@
       font-weight: bold;
     }
 
+    /* CONTENEDOR PRINCIPAL CON FONDO BLANCO */
+    .main-content {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem 0;
+    }
+
+    /* SECCIONES INTERNAS */
     .section {
-      padding: 2rem;
       max-width: 1000px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.85); /* Para mejor contraste sobre la marca de agua */
-      border-radius: 8px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
     }
 
     .section h2 {
       color: #063970;
+      border-bottom: 2px solid #063970;
+      padding-bottom: 0.5rem;
+    }
+
+    /* ESTILOS PARA LAS VIÑETAS */
+    .about-features {
+      margin: 1.5rem 0;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .feature i {
+      color: #063970;
+      margin-right: 1rem;
+      font-size: 1.2rem;
     }
 
     footer {
@@ -81,23 +103,53 @@
     Energía Solar a tu Alcance
   </div>
 
-  <section class="section" id="servicios">
-    <h2>¿Qué hacemos?</h2>
-    <p>
-      En Soltek Ingeniería nos especializamos en la instalación de sistemas solares fotovoltaicos, mantenimiento eléctrico industrial, diseño de tableros eléctricos, y soluciones en eficiencia energética para empresas y hogares.
-    </p>
-  </section>
+  <!-- CONTENEDOR PRINCIPAL CON FONDO BLANCO -->
+  <div class="main-content">
+    <section class="section" id="servicios">
+      <h2>¿Qué hacemos?</h2>
+      <p>
+        En Soltek Ingeniería nos especializamos en la instalación de sistemas solares fotovoltaicos, mantenimiento eléctrico industrial, diseño de tableros eléctricos, y soluciones en eficiencia energética para empresas y hogares.
+      </p>
 
-  <section class="section" id="catalogo">
-    <h2>Catálogo</h2>
-    <p>Próximamente encontrarás nuestros servicios y productos disponibles aquí.</p>
-  </section>
+      <div class="about-features">
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Equipo de ingenieros certificados</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Tecnología de última generación</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Cumplimiento de normas y estándares</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <span>Soluciones personalizadas</span>
+        </div>
+      </div>
+    </section>
 
-  <section class="section" id="contacto">
+    <section class="section" id="catalogo">
+      <h2>Catálogo</h2>
+      <p>Próximamente encontrarás nuestros servicios y productos disponibles aquí.</p>
+    </section>
+
+<section class="section" id="contacto">
     <h2>Contacto</h2>
-    <p>Correo: contacto@soltekingenieria.com<br>
-       WhatsApp: +57 3134153455</p>
-  </section>
+    <p>Correo: contacto@soltekingenieria.com</p>
+    
+    <!-- Botón de WhatsApp -->
+    <a 
+        href="https://wa.me/573134153455" 
+        target="_blank"
+        class="whatsapp-btn"
+    >
+        <i class="fab fa-whatsapp"></i> WhatsApp: +57 3134153455
+    </a>
+</section>
+  </div>
 
   <footer>
     &copy; 2025 Soltek Ingeniería. Todos los derechos reservados.

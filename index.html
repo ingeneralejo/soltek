@@ -140,6 +140,28 @@
     width: 100%;
     height: 100%;
   }
+ /* Botón de WhatsApp */
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+
+    .whatsapp-btn i {
+      margin-right: 8px;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
@@ -191,19 +213,20 @@
     </section>
 
     <!-- Sección de contacto -->
-    <section class="section" id="contacto">
-      <h2>¿Listo para tu proyecto?</h2>
-      <p>Contáctanos para una asesoría personalizada y sin compromiso.</p>
-      
-      <div style="margin-top: 1.5rem;">
-        <p><i class="fas fa-envelope"></i> Correo: contacto@soltekingenieria.com</p>
-        <p><i class="fas fa-phone"></i> Teléfono: +57 313 415 3455</p>
-        
+<section class="section" id="contacto">
+  <h2>¿Listo para tu proyecto?</h2>
+  <p>Contáctanos para una asesoría personalizada y sin compromiso.</p>
+  
+  <div class="contact-list">
+    <p><i class="far fa-envelope"></i> Correo: contacto@soltekingenieria.com</p>
+    <p><i class="fas fa-phone"></i> Teléfono: +57 313 415 3455</p>
+   <!-- html de whatsap -->   
         <a href="https://wa.me/573134153455" target="_blank" class="whatsapp-btn">
           <i class="fab fa-whatsapp"></i> WhatsApp: +57 3134153455
         </a>
-      </div>
-    </section>
+
+  </div>
+</section>
   </div>
 
 

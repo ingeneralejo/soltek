@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Luis  Alejandro Ramos Rojas
+N;CHARSET=UTF-8:Ramos Rojas;Luis ;Alejandro;;
+NICKNAME;CHARSET=UTF-8:ALEJANDRO
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:contacto@soltekingenieria.com
+TEL;TYPE=CELL:3134153455
+TEL;TYPE=HOME,VOICE:3134153455
+ADR;CHARSET=UTF-8;TYPE=HOME:;;carrera 2 59 47;yopal;casanare;850001;Colombia
+ADR;CHARSET=UTF-8;TYPE=WORK:;;carrera 2 59 47;;;;
+TITLE;CHARSET=UTF-8:Ingeniero Electrónico
+ROLE;CHARSET=UTF-8:Ingeniero instalador sistemas fotovoltaicos
+ORG;CHARSET=UTF-8:SOLTEK Ingenieria
+URL;type=WORK;CHARSET=UTF-8:https:soltekingenieria.com
+REV:2025-05-31T23:34:29.850Z
+END:VCARD

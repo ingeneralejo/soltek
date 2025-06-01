@@ -4,83 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tarjeta de Presentación - Soltek Ingeniería</title>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f6f8;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f4f6f8 0%, #e8eef4 100%);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      animation: fadeIn 0.8s ease-in-out;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 30px 20px;
-      width: 320px;
+      border-radius: 20px;
+      padding: 30px;
+      width: 340px;
       text-align: center;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      transform: scale(0.98);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+    .card:hover {
+      transform: scale(1);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    
     .photo {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 15px;
+      margin: 0 auto 15px;
+      border: 4px solid #003366;
+      box-shadow: 0 4px 10px rgba(0,51,102,0.2);
     }
     .logo {
       width: 100px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      opacity: 0.9;
     }
     h2 {
       margin: 10px 0 5px;
       color: #003366;
-      font-size: 20px;
+      font-size: 22px;
+      font-weight: 700;
     }
     p {
-      margin: 4px 0;
+      margin: 6px 0;
       color: #555;
+      font-size: 15px;
     }
+    .highlight {
+      color: #003366;
+      font-weight: 600;
+    }
+    
     .buttons a {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px auto;
+      padding: 12px 20px;
       width: 90%;
-      border-radius: 8px;
+      max-width: 280px; 
+      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       color: white;
-      transition: background 0.3s;
+      transition: all 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    .website { background: #003366; }
-    .whatsapp { background: #25D366; }
-    .social { background: #1DA1F2; }
+    .buttons a i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    
+    /* Botón principal (Teléfono) */
     .vcard { 
-      background: #6a1b9a;
-      margin-top: 15px; /* Espacio adicional */
+      background: linear-gradient(135deg, #6a1b9a 0%, #9c27b0 100%);
+      font-size: 16px;
     }
-    .buttons a:hover {
-      opacity: 0.9;
+    .vcard:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(106,27,154,0.3);
+    }
+    
+    /* WhatsApp */
+    .whatsapp { 
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    }
+    .whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(37,211,102,0.3);
+    }
+    
+    /* Instagram */
+    .social { 
+      background: linear-gradient(135deg, #833AB4 0%, #E1306C 50%, #F56040 100%);
+    }
+    .social:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(131,58,180,0.3);
+    }
+    
+    /* Web */
+    .website { 
+      background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    }
+    .website:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,51,102,0.3);
+    }
+    
+    .divider {
+      margin: 20px 0;
+      border-top: 1px dashed #ddd;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="images/foto.png" alt="Foto tamaño cédula" class="photo">
+    <img src="images/foto.png" alt="Foto profesional" class="photo">
     <img src="images/soltek.png" alt="Logo Soltek Ingeniería" class="logo">
+    
     <h2>Luis Alejandro Ramos Rojas</h2>
     <p>Ingeniero Electrónico</p>
-    <p>Email: contacto@soltekingenieria.com</p>
+    <p><span class="highlight">contacto@soltekingenieria.com</span></p>
     
-
+    <div class="divider"></div>
+    
     <div class="buttons">
-      <!-- Botón de vCard (corregido) -->
-      <a href="vcard.vcf" download="contacto_soltek.vcf" class="vcard">Celular 313-415-3455</a>
+      <!-- Botón principal (Teléfono) -->
+      <a href="vcard.vcf" download="contacto_soltek.vcf" class="vcard">
+        <i class="fas fa-phone-alt"></i> ¡Llámame ahora! 313-415-3455
+      </a>
       
-      <a href="https://wa.me/573134153455" target="_blank" class="whatsapp">Escribir por WhatsApp</a>
-      <a href="https://www.instagram.com/soltekingenieria" target="_blank" class="social">Redes Sociales</a>
-      <a href="https://soltekingenieria.com" target="_blank" class="website">Visitar Página Web</a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/573134153455" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> Chat rápido por WhatsApp
+      </a>
+      
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/soltekingenieria" target="_blank" class="social">
+        <i class="fab fa-instagram"></i> Sígueme en Instagram
+      </a>
+      
+      <!-- Web -->
+      <a href="https://soltekingenieria.com" target="_blank" class="website">
+        <i class="fas fa-globe"></i> Visita mi página web
+      </a>
     </div>
   </div>
 </body>

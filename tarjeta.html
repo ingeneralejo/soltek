@@ -58,33 +58,29 @@
     .social { background: #1DA1F2; }
     .vcard { 
       background: #6a1b9a;
-      margin-top: 15px; 
-      }
+      margin-top: 15px; /* Espacio adicional */
+    }
     .buttons a:hover {
       opacity: 0.9;
     }
-
-    
   </style>
 </head>
 <body>
-
   <div class="card">
     <img src="images/foto.png" alt="Foto tamaño cédula" class="photo">
     <img src="images/soltek.png" alt="Logo Soltek Ingeniería" class="logo">
-    
     <h2>Luis Alejandro Ramos Rojas</h2>
     <p>Ingeniero Electrónico</p>
     <p>Email: contacto@soltekingenieria.com</p>
     <p>Tel: +57 313 415 3455</p>
 
     <div class="buttons">
+      <!-- Botón de vCard (corregido) -->
+      <a href="vcard.vcf" download="contacto_soltek.vcf" class="vcard">Descargar Contacto</a>
       <a href="https://soltekingenieria.com" target="_blank" class="website">Visitar Página Web</a>
       <a href="https://wa.me/573134153455" target="_blank" class="whatsapp">Escribir por WhatsApp</a>
       <a href="https://www.instagram.com/soltekingenieria" target="_blank" class="social">Redes Sociales</a>
-      <a href="vcard.vcf" download="vcard.vcf">Descargar Contacto</a>
     </div>
   </div>
-
 </body>
 </html>
